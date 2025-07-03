@@ -4,12 +4,10 @@ import { useEffect, useState } from "react";
 import { CiDark, CiLight } from "react-icons/ci";
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(
-    localStorage.getItem("theme") === "dark",
-  );
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("theme");
+    const saved = localStorage?.getItem("theme");
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)",
     ).matches;
@@ -21,7 +19,7 @@ export default function ThemeToggle() {
   const toggleTheme = () => {
     const nextTheme = !isDark ? "dark" : "light";
     document.documentElement.classList.toggle("dark", !isDark);
-    localStorage.setItem("theme", nextTheme);
+    localStorage?.setItem("theme", nextTheme);
     setIsDark(!isDark);
   };
 
@@ -29,6 +27,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className="cursor-pointer transition-all duration-300"
+      aria-label={`Switch to ${isDark ? 'light' : 'dark'} theme`}
     >
       {isDark ? <CiLight size={24} /> : <CiDark size={24} />}
     </button>

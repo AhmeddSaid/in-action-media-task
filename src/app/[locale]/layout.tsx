@@ -1,5 +1,7 @@
 import MainLayout from "@/library/components/layout/MainLayout";
 import "../globals.css";
+import { Metadata } from "next";
+import { use } from "react";
 
 const siteName = process.env.SITE_NAME || "SIDF";
 
@@ -42,21 +44,20 @@ const sarmadyFont = localFont({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: siteName,
     template: `%s | ${siteName}`,
   },
 };
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
+type Props = {
   children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const { locale } = params;
+  params: Promise<{ locale: string }>;
+};
+
+export default function RootLayout({ children, params }: Props) {
+  const { locale } = use(params);
   return (
     <html
       lang={locale}

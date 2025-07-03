@@ -1,17 +1,21 @@
 import Home from "@/library/pages/Home/Home";
 import { generateLocalizedMetadata } from "@/library/utils/generateLocalizedMetadata";
+import { Metadata } from "next";
+import { use } from "react";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { locale: string };
-}) {
-  const locale = params.locale;
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  const { locale } = await params;
   return generateLocalizedMetadata(locale, "home");
 }
 
-export default function Page({ params }: { params: { locale: string } }) {
-  const locale = params.locale;
+export default function Page({ params }: Props) {
+  const { locale } = use(params);
 
   return <Home locale={locale} />;
 }

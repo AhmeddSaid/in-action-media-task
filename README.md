@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" src="https://raw.githubusercontent.com/AhmeddSaid/in-action-media-task/main/assets/images/readme.png"" />
+  <img align="center" src="https://raw.githubusercontent.com/AhmeddSaid/in-action-media-task/refs/heads/master/public/assets/images/readme.png"" />
 </p>
 
 # SIDF Frontend Task Documentation

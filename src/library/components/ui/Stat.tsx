@@ -23,7 +23,6 @@ export default function Stat({
   const [count, setCount] = useState(0);
   const [barWidth, setBarWidth] = useState(0);
 
-  // Animate number count
   useEffect(() => {
     if (!inView) return;
 
@@ -43,7 +42,6 @@ export default function Stat({
       setCount(parseFloat(start.toFixed(1)));
     }, stepTime);
 
-    // Animate bar width
     setBarWidth((value / target) * 100);
   }, [inView, value, target]);
 

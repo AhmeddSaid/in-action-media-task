@@ -8,7 +8,7 @@ function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const currentLocale = pathname.split("/")[1]; // 'en' or 'ar'
+  const currentLocale = pathname.split("/")[1];
   const newLocale = currentLocale === "ar" ? "en" : "ar";
 
   const [showOverlay, setShowOverlay] = useState(false);
@@ -27,9 +27,8 @@ function LanguageSwitcher() {
 
       router.push(segments.join("/"));
 
-      // Optional: hide overlay after route change
       setTimeout(() => setShowOverlay(false), 600);
-    }, 500); // match transition duration
+    }, 500);
   };
 
   return (

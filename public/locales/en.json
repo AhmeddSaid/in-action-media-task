@@ -1,0 +1,337 @@
+{
+  "nav-menu": {
+    "image": "/assets/images/1.webp",
+    "page": 1,
+    "title": "Overview of the Fund",
+    "links": [
+      {
+        "title": "About the Fund",
+        "link": "/"
+      },
+      {
+        "title": "Board of Directors",
+        "link": "/"
+      },
+      {
+        "title": "Organizational Structure",
+        "link": "/"
+      },
+      {
+        "title": "Message from the Chairman",
+        "link": "/"
+      },
+      {
+        "title": "Message from the CEO",
+        "link": "/"
+      }
+    ],
+    "nav-links": [
+      {
+        "title": "Fund Overview",
+        "link": "/"
+      },
+      {
+        "title": "Key Figures",
+        "link": "/"
+      },
+      {
+        "title": "Local Economic Trends & Indicators",
+        "link": "/"
+      },
+      {
+        "title": "Lending Activity",
+        "link": "/"
+      },
+      {
+        "title": "Fund Strategies",
+        "link": "/"
+      },
+      {
+        "title": "Digital Transformation & IT",
+        "link": "/"
+      },
+      {
+        "title": "Human Capital Development",
+        "link": "/"
+      },
+      {
+        "title": "50 Years of the Fund",
+        "link": "/"
+      },
+      {
+        "title": "Industrial Study",
+        "link": "/"
+      },
+      {
+        "title": "Lending Activity Statistics",
+        "link": "/"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Enabling Development",
+    "subtitle": "Financing a Sustainable Future"
+  },
+  "hero-content": [
+    {
+      "title": "About SIDF",
+      "body": "The Saudi Industrial Development Fund (SIDF) was established in 1974 (1394H) with an initial capital of 500 million SAR. It is one of the key pillars of achieving sustainable industrial development in the Kingdom. SIDF provides financial and advisory solutions to support the growth and development of the industrial sector, and its role has expanded to include promising sectors such as energy, mining, and logistics, making it the primary financial enabler for achieving Vision 2030 goals.",
+      "stats": [
+        {
+          "value": 105,
+          "unit": "billion SAR",
+          "body": "Current capital - 2019"
+        },
+        { "value": 20, "unit": "billion SAR", "body": "Capital in 2005" },
+        {
+          "value": 500,
+          "unit": "million SAR",
+          "body": "Initial capital - 1974"
+        }
+      ]
+    },
+    {
+      "title": "Board of Directors",
+      "body": "SIDF’s Board of Directors comprises elite leaders and experts from various key sectors across the Kingdom. The Board is responsible for setting public policies and defining SIDF’s strategic direction. It ensures sound governance and supervises the Fund’s performance to efficiently and effectively achieve its objectives in line with national industrial development aspirations.",
+      "stats": [
+        { "value": 9, "unit": "members", "body": "Board members" },
+        {
+          "value": 5,
+          "unit": "meetings/year",
+          "body": "Average annual meetings"
+        },
+        { "value": 3, "unit": "sectors", "body": "Diverse sector expertise" }
+      ]
+    },
+    {
+      "title": "Organizational Structure",
+      "body": "SIDF adopts a flexible organizational structure that supports swift decision-making and enhances performance efficiency. The structure includes specialized departments in finance, business development, strategic planning, and support services, ensuring effective coordination between units for optimal results. This framework also enables the adoption of modern methodologies that enhance the beneficiary experience.",
+      "stats": [
+        {
+          "value": 4,
+          "unit": "main departments",
+          "body": "Finance, Development, Strategy, Support"
+        },
+        { "value": 15, "unit": "units", "body": "Total organizational units" },
+        {
+          "value": 2024,
+          "unit": "",
+          "body": "Updated to align with Vision goals"
+        }
+      ]
+    },
+    {
+      "title": "Message from the Chairman",
+      "body": "We at the SIDF Board of Directors take pride in the Fund’s pivotal role in supporting the national economy and stimulating industrial investments. We are fully committed to embedding sustainability and innovation within the industrial sector and advancing toward realizing the leadership’s aspirations for building a diverse and prosperous economy.",
+      "stats": [
+        {
+          "value": 50,
+          "unit": "years",
+          "body": "Of industrial and developmental experience"
+        },
+        {
+          "value": 2030,
+          "unit": "",
+          "body": "Driving efforts toward Vision 2030"
+        },
+        {
+          "value": 100,
+          "unit": "%",
+          "body": "Commitment to governance and transparency"
+        }
+      ]
+    },
+    {
+      "title": "Message from the CEO",
+      "body": "At SIDF, we aim to provide an integrated financing experience that empowers industrial investors and adds value to the national economy. We believe in the importance of partnership with the private sector and are continuously developing our services and products to align with the objectives of Vision 2030, with a firm commitment to excellence and efficiency.",
+      "stats": [
+        { "value": 80, "unit": "%", "body": "Customer satisfaction rate" },
+        { "value": 200, "unit": "projects", "body": "Financed last year" },
+        { "value": 3, "unit": "days", "body": "Average processing time" }
+      ]
+    }
+  ],
+  "our-goals": {
+    "title": "Our Strategic Goals",
+    "body": "The Industrial Development Fund works effectively to provide financial and advisory support and offer innovative solutions to grow and develop local industry and improve its performance, in order to achieve the following goals:",
+    "goals": [
+      {
+        "icon": "/assets/svg/strategy icon1.svg",
+        "body": "Enhance the efficiency and performance of enterprises and achieve sustainability"
+      },
+      {
+        "icon": "/assets/svg/strategy icon2.svg",
+        "body": "Support local products"
+      },
+      {
+        "icon": "/assets/svg/strategy icon3.svg",
+        "body": "Promote non-oil exports"
+      },
+      {
+        "icon": "/assets/svg/strategy icon4.svg",
+        "body": "Foster integration between the industrial sector and other sectors"
+      },
+      {
+        "icon": "/assets/svg/strategy icon5.svg",
+        "body": "Increase the participation of Saudi talents in the industrial sector"
+      },
+      {
+        "icon": "/assets/svg/strategy icon6.svg",
+        "body": "Optimize the use of local raw materials"
+      },
+      {
+        "icon": "/assets/svg/strategy icon7.svg",
+        "body": "Attract foreign investment and localize technology"
+      },
+      {
+        "icon": "/assets/svg/strategy icon8.svg",
+        "body": "Promote a culture of industrial safety and risk prevention in industrial facilities"
+      },
+      {
+        "icon": "/assets/svg/strategy icon9.svg",
+        "body": "Raise environmental awareness in the industrial sector"
+      }
+    ]
+  },
+  "about-content": [
+    {
+      "icon": "/assets/svg/about icon1.svg",
+      "title": "Vision",
+      "body": "An industrial development fund that empowers Saudi Arabia’s transformation into a leading industrial power and a global logistics hub."
+    },
+    {
+      "icon": "/assets/svg/about icon2.svg",
+      "title": "Mission",
+      "body": "Enhancing the competitiveness of the ecosystem and improving investment attractiveness by offering financial and non-financial products and services."
+    }
+  ],
+  "values": {
+    "icon": "/assets/svg/value icon.svg",
+    "title": "Core Values",
+    "data": [
+      {
+        "icon": "/assets/svg/value icon1.svg",
+        "title": "Client Success",
+        "color": "#66b5df",
+        "body": "We support the success of our clients, as their success is our own."
+      },
+      {
+        "icon": "/assets/svg/value icon2.svg",
+        "title": "Empowerment",
+        "color": "#c76b82",
+        "body": "We strive to empower others so we can work together and achieve results efficiently."
+      },
+      {
+        "icon": "/assets/svg/value icon3.svg",
+        "title": "Collaboration",
+        "color": "#f29c5a",
+        "body": "We support the success of our clients, as their success is our own."
+      },
+      {
+        "icon": "/assets/svg/value icon4.svg",
+        "title": "Development",
+        "color": "#c2c0c2",
+        "body": "Development is at the heart of our work and the driver behind everything we do."
+      },
+      {
+        "icon": "/assets/svg/value icon5.svg",
+        "title": "Reliability",
+        "color": "#b59acf",
+        "body": "We can be relied upon in any task entrusted to us, and in the decisions we make."
+      }
+    ]
+  },
+  "stats": {
+    "target": 120,
+    "data": [
+      {
+        "value": 105,
+        "unit": "billion USD",
+        "label": "2019"
+      },
+      {
+        "value": 65,
+        "unit": "billion USD",
+        "label": "2017"
+      },
+      {
+        "value": 40,
+        "unit": "billion USD",
+        "label": "2012"
+      },
+      {
+        "value": 20,
+        "unit": "billion USD",
+        "label": "2005"
+      },
+      {
+        "value": 7,
+        "unit": "billion USD",
+        "label": "1992"
+      },
+      {
+        "value": 3,
+        "unit": "billion USD",
+        "label": "1975"
+      },
+      {
+        "value": 0.5,
+        "unit": "billion USD",
+        "label": "1974"
+      }
+    ]
+  },
+  "nav": [
+    {
+      "icon": "/assets/svg/home.svg",
+      "title": "Home Page",
+      "link": "/",
+      "text": "Interactive Report 2023",
+      "ltr": false
+    },
+    {
+      "icon": "/assets/svg/arrow-right.svg",
+      "title": "Next Topic",
+      "link": "/",
+      "text": "Board of Directors",
+      "ltr": true
+    }
+  ],
+  "footer": {
+    "website": "sidf.gov.sa",
+    "phone": "0118251555",
+    "qr": "/assets/images/QR code.png",
+    "socials": [
+      {
+        "name": "instagram",
+        "link": "/",
+        "color": "#dd2a7b"
+      },
+      {
+        "name": "x",
+        "link": "/",
+        "color": "#000000"
+      },
+      {
+        "name": "linkedin",
+        "link": "/",
+        "color": "#0a66c2"
+      },
+      {
+        "name": "facebook",
+        "link": "/",
+        "color": "#1877f2"
+      },
+      {
+        "name": "youtube",
+        "link": "/",
+        "color": "#ff0000"
+      }
+    ]
+  },
+  "not-found": {
+    "title": "404",
+    "subtitle": "Page not found",
+    "button": "Back to Home"
+  }
+}

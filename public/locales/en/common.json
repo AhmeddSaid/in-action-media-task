@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "home": {
+      "title": "Home",
+      "description": "Welcome to the Saudi Industrial Development Fund."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn more about SIDF’s mission and values."
+    }
+  }
+}

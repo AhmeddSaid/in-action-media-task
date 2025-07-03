@@ -2,20 +2,192 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light Theme */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+
+  --nav-bg: #aad2a6;
+
+  --color-main: #60a534;
+  --color-secondary: #32739f;
+
+  --color-dark-green: #058340;
+  --color-light-green: #87bf81;
+
+  --color-dark-gray: #63696d;
+  --color-light-gray: #c1c3c5;
+
+  --color-sec-blue: #3b82b4;
+  --color-sec-red: #973f54;
+  --color-sec-orange: #e97924;
+  --color-sec-gray: #9d9b9d;
+  --color-sec-purple: #5e4875;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark Theme */
+.dark {
+  --background: #181818;
+  --foreground: #ededed;
+
+  --nav-bg: #aad2a6;
+
+  --color-main: #86c960;
+  --color-secondary: #4fa5cf;
+
+  --color-dark-green: #50a36a;
+  --color-light-green: #b5ddb0;
+
+  --color-dark-gray: #c5c9ce;
+  --color-light-gray: #888c91;
+
+  --color-sec-blue: #66b5df;
+  --color-sec-red: #c76b82;
+  --color-sec-orange: #f29c5a;
+  --color-sec-gray: #c2c0c2;
+  --color-sec-purple: #b59acf;
 }
 
+html {
+  font-family: var(--font-sarmady), Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  transition:
+    background-color 300ms ease,
+    color 300ms ease,
+    border-color 300ms ease,
+    fill 300ms ease,
+    stroke 300ms ease;
+}
 body {
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+  background-color: var(--color-main);
+  color: #fff;
+}
+.hex-clip {
+  clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%);
+}
+.btn-clip {
+  clip-path: polygon(0% 30%, 0% 100%, 90% 100%, 100% 70%, 100% 0%, 10% 0%);
+}
+.stat-clip {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 95% 0%);
+}
+.title-clip {
+  clip-path: polygon(15% 0%, 100% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 50%);
+}
+.tab-button::before,
+.tab-button::after {
+  content: "";
+  transition: 300ms;
+  position: absolute;
+  bottom: 0;
+  width: 24px;
+  height: 100%;
+  clip-path: polygon(0% 50%, 90% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: var(--background);
+}
+
+.tab-button.nav::before,
+.tab-button.nav::after {
+  background-color: var(--nav-bg);
+}
+.tab-button::before {
+  bottom: 0;
+  right: -22px;
+  transform: rotate(180deg);
+}
+.tab-button::after {
+  bottom: 0;
+  left: -22px;
+}
+.tab-button:hover::before,
+.tab-button:hover::after,
+.tab-button.active::before,
+.tab-button.active::after {
+  background-color: var(--color-main);
+}
+.tab-button.nav:hover::before,
+.tab-button.nav:hover::after,
+.tab-button.nav.active::before,
+.tab-button.nav.active::after {
+  background-color: #fff;
+}
+.our-goals-bg {
+  background-color: color-mix(in oklab, var(--color-main) 50%, transparent);
+}
+.our-goals-section::before {
+  right: 0;
+  top: -1px;
+  transform: scaleX(-1);
+}
+.our-goals-section::after {
+  left: 0;
+  bottom: -1px;
+  transform: rotate(180deg) scaleX(-1);
+}
+.our-goals-section.rtl::before {
+  left: -1px;
+  right: unset;
+  transform: scaleX(1);
+}
+.our-goals-section.rtl::after {
+  right: -1px;
+  left: unset;
+  transform: rotate(180deg);
+}
+.our-goals-section::before,
+.our-goals-section::after {
+  content: "";
+  width: 80px;
+  height: 128px;
+  position: absolute;
+  background-color: var(--background);
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%);
+  z-index: 3;
+}
+.our-goals-section .goal {
+  background-color: color-mix(in oklab, #000 20%, transparent);
+  clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%);
+}
+
+.custom-hover:hover {
+  background-color: var(--hover-color);
+}
+
+/* video player style */
+.range-main::-webkit-slider-runnable-track {
+  background: var(--color-main);
+  height: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.range-main::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--color-main);
+  margin-top: -4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.range-main::-moz-range-track {
+  background: var(--color-main);
+  height: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.range-main::-moz-range-thumb {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--color-main);
+  cursor: pointer;
 }

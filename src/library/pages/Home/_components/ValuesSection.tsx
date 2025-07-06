@@ -35,7 +35,7 @@ export default function ValuesSection({
         className="group relative bg-background p-4 drop-shadow-[-2px_4px_2px_rgb(0,0,0,0.15)] dark:drop-shadow-[-2px_4px_2px_#86c960]"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }}
         variants={containerVariants}
       >
         <motion.div

@@ -1,17 +1,12 @@
-import { notFound, redirect } from "next/navigation";
+import NotFound from "@/library/pages/NotFound/NotFound";
 import { use } from "react";
 
-export default function Page({
-  params,
-}: {
-  params: Promise<{ locale: "en" | "ar" }>;
-}) {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default function Page({ params }: Props) {
   const { locale } = use(params);
-  const url = locale === "ar" ? "/ar/404" : "/en/404";
 
-  if (!url.endsWith("/404")) {
-    redirect(url);
-  }
-
-  return notFound();
+  return <NotFound locale={locale} />;
 }

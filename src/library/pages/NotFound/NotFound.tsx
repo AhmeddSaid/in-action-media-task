@@ -2,12 +2,10 @@
 
 import { getTranslations } from "@/library/translations/getTranslations";
 import { motion } from "framer-motion";
-import { useParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-export default function NotFound() {
-  const params = useParams();
-  const locale = typeof params?.locale === "string" ? params.locale : "ar";
+export default function NotFound({ locale }: { locale: string }) {
   const t = getTranslations(locale);
   const { title, subtitle, button } = t["not-found"];
 

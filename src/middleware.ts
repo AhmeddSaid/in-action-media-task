@@ -29,6 +29,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(`${pathname}/home`, request.url));
   }
 
+  const localePattern = /^(en|ar)\//;
+  if (!localePattern.test(pathname.slice(1))) {
+    return NextResponse.rewrite(new URL(`/en/404`, request.url));
+  }
+
   return NextResponse.next();
 }
 
